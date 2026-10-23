@@ -11,7 +11,8 @@ tablets that use the site, and **REST clients** for anything else that wants to
 talk to it.
 
 Everything here is MIT (Modified — no resale) unless its repository says
-otherwise.
+otherwise. Looking for one repository? See the
+[index of every repository](#every-repository) at the end.
 
 ---
 
@@ -334,6 +335,43 @@ Pull requests are squash-merged, so the PR title is what the release job reads.
 
 The Composer libraries are released by hand as `vX.Y.Z` tags; the .NET
 libraries publish to GitHub Packages from a tag.
+
+---
+
+## Every repository
+
+| Repository | Kind | Language | Purpose |
+| --- | --- | --- | --- |
+| [12-step-meeting-list](https://github.com/bleedingdeacons/12-step-meeting-list) | Fork | PHP | Our fork of Code for Recovery's 12 Step Meeting List plugin, the source of meetings and groups for TSML for Unity and Confur. |
+| [amber](https://github.com/bleedingdeacons/amber) | Plugin | PHP | The admin interface for Unity: the *Intergroup* menu, dashboard widgets for positions, meetings and attendance, and position shortcodes. |
+| [beacon](https://github.com/bleedingdeacons/beacon) | Library | PHP | Call-forwarding contracts, roles and an optional REST API, plus the registry where a driver (Tamar) is published and a consumer (Trusted) finds it. |
+| [concordance](https://github.com/bleedingdeacons/concordance) | Plugin | PHP | Client for the AAGBDB Groups API: a caching REST proxy, a dashboard widget and WP-CLI commands. Standalone; GPL v2. |
+| [confur](https://github.com/bleedingdeacons/confur) | Plugin | PHP | Collates groups' answers to Conference questions: a public form for groups, status and results screens for region representatives. Standalone. |
+| [fellowship](https://github.com/bleedingdeacons/fellowship) | Plugin | PHP | Server side of Link: enrols handsets against Unity members, stores messages and pushes them sealed to each handset's key. Also signs in for Freedom. |
+| [freedom](https://github.com/bleedingdeacons/freedom) | Plugin | PHP | Zero-configuration settings for the apps: a tablet signs in through Fellowship and receives versioned configuration, with secrets sealed to that tablet. |
+| [freedom-sharp](https://github.com/bleedingdeacons/freedom-sharp) | Client | C# | The app half of Freedom (`Freedom.Client`, `Freedom.Client.Maui`): sign in once, fetch only changed settings on each start, open secrets with the device key. |
+| [guardian](https://github.com/bleedingdeacons/guardian) | Library | PHP | OAuth sign-in shared by Reach and Fellowship: Google, Microsoft, Facebook and Apple providers, ID-token verification and single-use sign-in state. |
+| [integrity](https://github.com/bleedingdeacons/integrity) | Plugin | PHP | A secure REST API over Unity's groups, meetings, members and positions: scoped API keys, rate limits, IP allow-lists and a full request log. |
+| [integrity-php](https://github.com/bleedingdeacons/integrity-php) | Client | PHP | A single-file cURL client for Integrity's API, with typed responses. |
+| [integrity-sharp](https://github.com/bleedingdeacons/integrity-sharp) | Client | C# | A typed .NET client for Integrity's API, published as `Integrity.Client`. Used by Register. |
+| [inventory](https://github.com/bleedingdeacons/inventory) | Client | C# | Durable Better Stack logging for .NET apps: buffered to disk, timestamped at source, shipped once the app knows where. Used by Register and Link. |
+| [lifelines](https://github.com/bleedingdeacons/lifelines) | Plugin | PHP | A fast public lookup over a UK place, service and helpline dataset uploaded as CSV. Standalone. |
+| [link](https://github.com/bleedingdeacons/link) | App | C# | Messaging between members and to committees, from a phone. Server side is Fellowship. |
+| [monitor](https://github.com/bleedingdeacons/monitor) | App | C# | Rings telephone responders until an alert is acknowledged, and pages admins about site errors. Server side is Sentinel. |
+| [promises](https://github.com/bleedingdeacons/promises) | Plugin | PHP | A Model Context Protocol server, so an AI assistant can read the intergroup's records and, if allowed, fill gaps in the rota. |
+| [rabbit](https://github.com/bleedingdeacons/rabbit) | Library | PHP | Member-messaging contracts and `MemberMessenger`, which sends to a Unity member through whichever driver is registered and audits it. |
+| [reach](https://github.com/bleedingdeacons/reach) | Plugin | PHP | The public 12th-step finder: sign in, enter an area, see the nearest available 12th-step volunteers. |
+| [reconcile](https://github.com/bleedingdeacons/reconcile) | Plugin | PHP | Spreadsheet import and export for members, groups and positions. |
+| [register](https://github.com/bleedingdeacons/register) | App | C# | The intergroup meeting's attendance register on an Android tablet, working from a local copy of Unity's data. Server side is Integrity and Freedom. |
+| [scrutiny](https://github.com/bleedingdeacons/scrutiny) | Plugin | PHP | GDPR audit logging of who saw or changed personal data, and masking it from anyone without clearance. |
+| [sentinel](https://github.com/bleedingdeacons/sentinel) | Plugin | PHP | A dashboard of the suite's plugins and versions, the shared logger, and Monitor's server side. |
+| [tamar](https://github.com/bleedingdeacons/tamar) | Plugin | PHP | Call forwarding through Tamar Telecommunications' control panel, so the helpline rings whoever is on shift. |
+| [trumpet](https://github.com/bleedingdeacons/trumpet) | Plugin | PHP | Announcements, and a shortcode listing today's meetings on the front page. |
+| [trusted](https://github.com/bleedingdeacons/trusted) | Plugin | PHP | The seven-day telephone-responder rota: weekly templates applied to a week and filled from a calendar. |
+| [tsml-for-unity](https://github.com/bleedingdeacons/tsml-for-unity) | Plugin | PHP | Implements Unity's model over 12 Step Meeting List data, so an existing meeting list becomes Unity's groups and meetings. |
+| [unity](https://github.com/bleedingdeacons/unity) | Plugin | PHP | The core: the intergroup model as interfaces, and the container every other plugin registers against. |
+| [whatsapp](https://github.com/bleedingdeacons/whatsapp) | Plugin | PHP | Sends WhatsApp messages to Unity members through Meta's Business Cloud API. |
+| [wp-mocks](https://github.com/bleedingdeacons/wp-mocks) | Library | PHP | Development only: the suite's shared WordPress test doubles over Brain Monkey. |
 
 ---
 
