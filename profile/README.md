@@ -342,7 +342,6 @@ libraries publish to GitHub Packages from a tag.
 
 | Repository | Kind | Language | Purpose |
 | --- | --- | --- | --- |
-| [12-step-meeting-list](https://github.com/bleedingdeacons/12-step-meeting-list) | Fork | PHP | Our fork of Code for Recovery's 12 Step Meeting List plugin, the source of meetings and groups for TSML for Unity and Confur. |
 | [amber](https://github.com/bleedingdeacons/amber) | Plugin | PHP | The admin interface for Unity: the *Intergroup* menu, dashboard widgets for positions, meetings and attendance, and position shortcodes. |
 | [beacon](https://github.com/bleedingdeacons/beacon) | Library | PHP | Call-forwarding contracts, roles and an optional REST API, plus the registry where a driver (Tamar) is published and a consumer (Trusted) finds it. |
 | [concordance](https://github.com/bleedingdeacons/concordance) | Plugin | PHP | Client for the AAGBDB Groups API: a caching REST proxy, a dashboard widget and WP-CLI commands. Standalone; GPL v2. |
