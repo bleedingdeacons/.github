@@ -86,7 +86,7 @@ flowchart BT
 Everything that needs Scrutiny also needs Unity. Unity ships **headless**: it
 defines the interfaces and the container, and TSML for Unity supplies the
 concrete repositories, backed by the
-[12 Step Meeting List](https://github.com/bleedingdeacons/12-step-meeting-list)
+[12 Step Meeting List](https://github.com/code4recovery/12-step-meeting-list)
 plugin's meetings and groups.
 
 **Standalone**, with no Unity dependency: Concordance (a client for the AAGBDB
